@@ -8,7 +8,7 @@ public class SqliteConnection {
 	public static Connection dbConnector(){
 		try{
 			Class.forName("org.sqlite.JDBC");
-			Connection con = DriverManager.getConnection("JDBC:sqlite:D:\\Java-Workspace\\Project\\ResultSheet.sqlite");
+			Connection con = DriverManager.getConnection("JDBC:sqlite:D:\\Java-Workspace\\StudentManagement\\ResultSheet.sqlite");
 			return con;
 		
 		}

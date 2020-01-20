@@ -54,7 +54,7 @@ public class StudentSignUp extends JFrame {
 		setResizable(false);
 		connection = SqliteConnection.dbConnector();
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(350, 100, 722, 505);
+		setBounds(0, 0, 1920, 1080);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -62,78 +62,78 @@ public class StudentSignUp extends JFrame {
 		
 		JLabel lblNewLabel = new JLabel("Student's Sign Up");
 		lblNewLabel.setForeground(Color.YELLOW);
-		lblNewLabel.setFont(new Font("Palatino Linotype", Font.BOLD, 25));
+		lblNewLabel.setFont(new Font("Segoe UI", Font.BOLD, 40));
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
-		lblNewLabel.setBounds(10, 11, 696, 35);
+		lblNewLabel.setBounds(0, 280, 1920, 68);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("Name");
 		lblNewLabel_1.setForeground(new Color(255, 255, 0));
 		lblNewLabel_1.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblNewLabel_1.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblNewLabel_1.setBounds(159, 73, 90, 32);
+		lblNewLabel_1.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblNewLabel_1.setBounds(801, 423, 106, 46);
 		contentPane.add(lblNewLabel_1);
 		
 		textField = new JTextField();
-		textField.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		textField.setBounds(283, 72, 258, 35);
+		textField.setFont(new Font("Segoe UI", Font.PLAIN, 22));
+		textField.setBounds(919, 422, 270, 48);
 		contentPane.add(textField);
 		textField.setColumns(10);
 		
 		textField_1 = new JTextField();
-		textField_1.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
+		textField_1.setFont(new Font("Segoe UI", Font.PLAIN, 22));
 		textField_1.setColumns(10);
-		textField_1.setBounds(283, 122, 258, 35);
+		textField_1.setBounds(919, 483, 270, 49);
 		contentPane.add(textField_1);
 		
 		JLabel lblSession = new JLabel("Session");
 		lblSession.setForeground(new Color(255, 255, 0));
 		lblSession.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblSession.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblSession.setBounds(143, 123, 106, 32);
+		lblSession.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblSession.setBounds(801, 484, 106, 46);
 		contentPane.add(lblSession);
 		
 		textField_2 = new JTextField();
-		textField_2.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
+		textField_2.setFont(new Font("Segoe UI", Font.PLAIN, 22));
 		textField_2.setColumns(10);
-		textField_2.setBounds(283, 168, 258, 35);
+		textField_2.setBounds(919, 545, 270, 50);
 		contentPane.add(textField_2);
 		
 		JLabel lblIdNo = new JLabel("ID No");
 		lblIdNo.setForeground(new Color(255, 255, 0));
 		lblIdNo.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblIdNo.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblIdNo.setBounds(143, 169, 106, 32);
+		lblIdNo.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblIdNo.setBounds(801, 550, 106, 41);
 		contentPane.add(lblIdNo);
 		
 		JLabel lblPassword = new JLabel("Password");
 		lblPassword.setForeground(new Color(255, 255, 0));
 		lblPassword.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblPassword.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblPassword.setBounds(144, 268, 104, 32);
+		lblPassword.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblPassword.setBounds(752, 668, 149, 46);
 		contentPane.add(lblPassword);
 		
 		passwordField = new JPasswordField();
-		passwordField.setFont(new Font("Tahoma", Font.BOLD, 14));
-		passwordField.setBounds(283, 265, 258, 40);
+		passwordField.setFont(new Font("Segoe UI", Font.PLAIN, 22));
+		passwordField.setBounds(919, 668, 270, 46);
 		contentPane.add(passwordField);
 		
 		JLabel lblConfirmPassword = new JLabel("Confirm Password");
 		lblConfirmPassword.setForeground(new Color(255, 255, 0));
 		lblConfirmPassword.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblConfirmPassword.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblConfirmPassword.setBounds(71, 324, 177, 32);
+		lblConfirmPassword.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblConfirmPassword.setBounds(671, 727, 230, 46);
 		contentPane.add(lblConfirmPassword);
 		
 		passwordField_1 = new JPasswordField();
-		passwordField_1.setFont(new Font("Tahoma", Font.BOLD, 14));
-		passwordField_1.setBounds(283, 321, 258, 40);
+		passwordField_1.setFont(new Font("Segoe UI", Font.PLAIN, 22));
+		passwordField_1.setBounds(919, 727, 270, 46);
 		
 		contentPane.add(passwordField_1);
 		
 		JButton btnNewButton = new JButton("Sign up");
 		btnNewButton.setForeground(new Color(0, 0, 0));
-		btnNewButton.setBackground(new Color(100, 149, 237));
+		btnNewButton.setBackground(new Color(0, 153, 204));
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String name = textField.getText();
@@ -201,13 +201,13 @@ public class StudentSignUp extends JFrame {
 			
 			}
 		});
-		btnNewButton.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		btnNewButton.setBounds(283, 392, 113, 40);
+		btnNewButton.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		btnNewButton.setBounds(825, 786, 139, 58);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Cancel");
 		btnNewButton_1.setForeground(new Color(0, 0, 0));
-		btnNewButton_1.setBackground(new Color(100, 149, 237));
+		btnNewButton_1.setBackground(new Color(0, 153, 204));
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				dispose();
@@ -215,28 +215,34 @@ public class StudentSignUp extends JFrame {
 				first.setVisible(true);
 			}
 		});
-		btnNewButton_1.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		btnNewButton_1.setBounds(435, 392, 106, 40);
+		btnNewButton_1.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		btnNewButton_1.setBounds(1064, 786, 125, 58);
 		contentPane.add(btnNewButton_1);
 		
 		JLabel lblUserName = new JLabel("User name");
 		lblUserName.setForeground(new Color(255, 255, 0));
 		lblUserName.setHorizontalAlignment(SwingConstants.RIGHT);
-		lblUserName.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
-		lblUserName.setBounds(143, 222, 106, 32);
+		lblUserName.setFont(new Font("Segoe UI", Font.BOLD, 25));
+		lblUserName.setBounds(783, 608, 125, 47);
 		contentPane.add(lblUserName);
 		
 		textField_3 = new JTextField();
-		textField_3.setFont(new Font("Palatino Linotype", Font.BOLD, 20));
+		textField_3.setFont(new Font("Segoe UI", Font.PLAIN, 22));
 		textField_3.setColumns(10);
-		textField_3.setBounds(283, 221, 258, 35);
+		textField_3.setBounds(919, 608, 270, 48);
 		contentPane.add(textField_3);
 		
+		JLabel lblNewLabel_3 = new JLabel("");
+		lblNewLabel_3.setIcon(new ImageIcon(StudentSignUp.class.getResource("/IMG/sign.jpg")));
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setBounds(642, 133, 650, 722);
+		contentPane.add(lblNewLabel_3);
+		
 		JLabel lblNewLabel_2 = new JLabel("");
-		lblNewLabel_2.setIcon(new ImageIcon(StudentSignUp.class.getResource("/IMG/main1.jpg")));
+		lblNewLabel_2.setIcon(new ImageIcon(StudentSignUp.class.getResource("/IMG/main.jpeg")));
 		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lblNewLabel_2.setBackground(Color.WHITE);
-		lblNewLabel_2.setBounds(0, 0, 716, 476);
+		lblNewLabel_2.setBounds(0, 0, 1920, 1080);
 		contentPane.add(lblNewLabel_2);
 	}
 }
